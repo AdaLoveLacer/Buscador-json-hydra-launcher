@@ -1,0 +1,419 @@
+
+> my-v0-project@0.1.0 dev
+> next dev
+
+   Ôû▓ Next.js 16.0.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.18.224:3000
+
+ Ô£ô Starting...
+ Ô£ô Ready in 1617ms
+ Ôùï Compiling / ...
+[I18nProvider] Creating context value: {
+  locale: 'pt-BR',
+  hasMessages: true,
+  messageKeys: [],
+  messageCount: 0
+}
+[useTranslations] Initial messages: { locale: 'pt-BR', availableKeys: [] }
+[useTranslations] Missing translation: { key: 'theme.default', part: 'theme', locale: 'pt-BR', available: [] }
+[useTranslations] Missing translation: { key: 'theme.dark', part: 'theme', locale: 'pt-BR', available: [] }
+[useTranslations] Missing translation: { key: 'theme.button', part: 'theme', locale: 'pt-BR', available: [] }
+[useTranslations] Missing translation: { key: 'header.title', part: 'header', locale: 'pt-BR', available: [] }
+[useTranslations] Missing translation: {
+  key: 'header.subtitle',
+  part: 'header',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'buttons.load_json',
+  part: 'buttons',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.dialog.title',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.dialog.description',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.dialog.tabs.file',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.dialog.tabs.url',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.file.drag_drop',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.file.max_size',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.url.placeholder',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.url.button',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.url.help',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'search.bar.placeholder',
+  part: 'search',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'search.bar.help_button',
+  part: 'search',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.clear',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.search_mode.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.search_mode.all',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.search_mode.any',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.sort.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.sort.date',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.sort.size',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.sort.name',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.date_range.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.date_range.from',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.date_range.to',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.min',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.placeholder.min',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.max',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.placeholder.max',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.results.count_plural',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.results.show',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+ GET / 200 in 4.4s (compile: 4.0s, render: 365ms)
+[I18nProvider] Creating context value: {
+  locale: 'pt-BR',
+  hasMessages: true,
+  messageKeys: [],
+  messageCount: 0
+}
+[useTranslations] Initial messages: { locale: 'pt-BR', availableKeys: [] }
+[useTranslations] Missing translation: { key: 'theme.default', part: 'theme', locale: 'pt-BR', available: [] }
+[useTranslations] Missing translation: { key: 'theme.dark', part: 'theme', locale: 'pt-BR', available: [] }
+[useTranslations] Missing translation: { key: 'theme.button', part: 'theme', locale: 'pt-BR', available: [] }
+[useTranslations] Missing translation: { key: 'header.title', part: 'header', locale: 'pt-BR', available: [] }
+[useTranslations] Missing translation: {
+  key: 'header.subtitle',
+  part: 'header',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'buttons.load_json',
+  part: 'buttons',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.dialog.title',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.dialog.description',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.dialog.tabs.file',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.dialog.tabs.url',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.file.drag_drop',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.file.max_size',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.url.placeholder',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.url.button',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'upload.url.help',
+  part: 'upload',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'search.bar.placeholder',
+  part: 'search',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'search.bar.help_button',
+  part: 'search',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.clear',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.search_mode.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.search_mode.all',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.search_mode.any',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.sort.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.sort.date',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.sort.size',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.sort.name',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.date_range.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.date_range.from',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.date_range.to',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.title',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.min',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.placeholder.min',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.max',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.size_range.placeholder.max',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.results.count_plural',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+[useTranslations] Missing translation: {
+  key: 'filters.results.show',
+  part: 'filters',
+  locale: 'pt-BR',
+  available: []
+}
+ GET / 200 in 136ms (compile: 7ms, render: 129ms)

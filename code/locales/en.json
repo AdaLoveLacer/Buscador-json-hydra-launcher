@@ -1,0 +1,143 @@
+{
+  "header": {
+    "title": "Hydra sources search engine",
+    "subtitle": "Advanced search across Hydra sources"
+  },
+  "buttons": {
+    "load_json": "Load JSON",
+    "copy_link": "Copy link",
+    "copied": "Copied!"
+  },
+  "no_results": {
+    "title": "No results found",
+    "body": "Try adjusting your search or filters"
+  },
+  "filters": {
+    "title": "Filters",
+    "clear": "Clear",
+    "search_mode": {
+      "title": "Search Mode",
+      "all": "All words",
+      "any": "Any word"
+    },
+    "sort": {
+      "title": "Sort by",
+      "date": "Upload Date (Recent)",
+      "size": "Size (Larger)",
+      "name": "Name (A-Z)"
+    },
+    "date_range": {
+      "title": "Upload Period",
+      "from": "From",
+      "to": "To"
+    },
+    "size_range": {
+      "title": "File Size (GB)",
+      "min": "Minimum",
+      "max": "Maximum",
+      "placeholder": {
+        "min": "Ex: 1",
+        "max": "Ex: 50"
+      }
+    },
+    "results": {
+      "count_singular": "result",
+      "count_plural": "results",
+      "show": "Showing {count} {type}"
+    }
+  },
+  "upload": {
+    "dialog": {
+      "title": "Load JSON file",
+      "description": "Select a JSON file with GOG links to add to the search",
+      "tabs": {
+        "file": "Upload",
+        "url": "From URL"
+      }
+    },
+    "file": {
+      "drag_drop": "Click or drag a JSON file",
+      "max_size": "Maximum 200MB",
+      "loading": "Loading...",
+      "error": {
+        "too_large": "File too large. Maximum allowed: 200MB. File size: {size}MB",
+        "invalid_format": "Invalid JSON format. Check the file structure.",
+        "read_error": "Error reading JSON file"
+      }
+    },
+    "url": {
+      "placeholder": "https://raw.githubusercontent.com/user/repo/main/file.json",
+      "button": "Load from URL",
+      "help": "Provide direct URL to JSON file. Example: GitHub raw content",
+      "error": {
+        "invalid_url": "Please provide a valid URL",
+        "http_error": "HTTP Error: {status}",
+        "invalid_format": "Invalid JSON format. Check the URL and file structure.",
+        "load_error": "Error loading JSON from URL: {message}"
+      }
+    },
+    "uploader": {
+      "title": "Upload your JSON file",
+      "description": "Drag and drop a JSON file or click to select",
+      "button": "Select File"
+    }
+  },
+  "search": {
+    "stats": {
+      "filtered": "Showing {filtered} of {total} results",
+      "for_query": "for \"{query}\"",
+      "tab": "Search"
+    },
+    "bar": {
+      "placeholder": "Search by title, version... Tip: separate words with spaces",
+      "help_button": "Search tips",
+      "help": {
+        "multiple_words": {
+          "title": "Multiple words:",
+          "description": "\"Baldur's Gate 3\" finds items with all terms"
+        },
+        "any_word": {
+          "title": "Any word:",
+          "description": "Use the filter to switch to \"any word\" mode"
+        }
+      }
+    }
+  },
+  "download_card": {
+    "unknown_source": "Unknown",
+    "url_suffix": "• URL",
+    "links": {
+      "count_singular": "link",
+      "count_plural": "links",
+      "copy": "Copy Link",
+      "copied": "Copied!",
+      "link_number": "Link {number}"
+    }
+  },
+  "sources_manager": {
+    "tab": "Sources",
+    "empty": {
+      "title": "No sources loaded",
+      "body": "Load JSON files or URLs to start searching"
+    },
+    "source_type": {
+      "url": "URL • Auto-updates",
+      "file": "Local file"
+    },
+    "last_updated": "Updated: {date}",
+    "offline_copy": "Offline copy"
+    ,
+    "retry_button": "Retry",
+    "retry": {
+      "success": "Loaded",
+      "failed": "Failed to load"
+    }
+  }
+
+  ,
+  "theme": {
+    "button": "Theme",
+    "default": "Default",
+    "dark": "Dark"
+  }
+}

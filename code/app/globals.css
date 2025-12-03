@@ -1,0 +1,224 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Updated color scheme for GOG Search - tech-focused dark theme */
+  --background: oklch(0.12 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.16 0 0);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.16 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.52 0.258 264.376);
+  --primary-foreground: oklch(0.95 0 0);
+  --secondary: oklch(0.22 0 0);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.22 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.55 0.248 338.64);
+  --accent-foreground: oklch(0.95 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.22 0 0);
+  --input: oklch(0.22 0 0);
+  --ring: oklch(0.52 0.258 264.376);
+  --chart-1: oklch(0.52 0.258 264.376);
+  --chart-2: oklch(0.55 0.248 338.64);
+  --chart-3: oklch(0.65 0 0);
+  --chart-4: oklch(0.75 0 0);
+  --chart-5: oklch(0.85 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.16 0 0);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.52 0.258 264.376);
+  --sidebar-primary-foreground: oklch(0.95 0 0);
+  --sidebar-accent: oklch(0.22 0 0);
+  --sidebar-accent-foreground: oklch(0.95 0 0);
+  --sidebar-border: oklch(0.22 0 0);
+  --sidebar-ring: oklch(0.52 0.258 264.376);
+
+  /* Font stack and aliased color variables (kept for compatibility) */
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+.dark {
+  /* Dark theme: black / white style */
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #0b0b0b;
+  --card-foreground: #ffffff;
+  --popover: #0b0b0b;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --secondary: #222222;
+  --secondary-foreground: #ffffff;
+  --muted: #222222;
+  --muted-foreground: #b3b3b3;
+  --accent: #ffffff;
+  --accent-foreground: #000000;
+  --destructive: #c2410c;
+  --destructive-foreground: #ffffff;
+  --border: #222222;
+  --input: #111111;
+  --ring: #ffffff;
+  --chart-1: #ffffff;
+  --chart-2: #b28cff;
+  --chart-3: #cccccc;
+  --chart-4: #8888ff;
+  --chart-5: #dddddd;
+  --sidebar: #0b0b0b;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #222222;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #222222;
+  --sidebar-ring: #ffffff;
+}
+
+/* Default theme (previously 'purple') */
+.default {
+  /* Default -> Tema cinza escuro com destaques roxos */
+  --background: #1a1a1a; /* Cinza escuro para fundo */
+  --foreground: #ffffff; /* Texto branco */
+  --card: #424242; /* Cards um pouco mais claros que o fundo */
+  --card-foreground: #ffffff; /* Texto nos cards */
+  --popover: #424242; /* Popovers mesma cor dos cards */
+  --popover-foreground: #ffffff; /* Texto nos popovers */
+  --primary: #7c3aed; /* Roxo principal para destaques */
+  --primary-foreground: #ffffff; /* Texto sobre roxo */
+  --secondary: #333333; /* Cinza um pouco mais claro */
+  --secondary-foreground: #ffffff; /* Texto sobre secundário */
+  --muted: #404040; /* Cinza médio para áreas desativadas */
+  --muted-foreground: #a3a3a3; /* Texto desativado */
+  --accent: #7c3aed; /* Roxo para acentos */
+  --accent-foreground: #ffffff; /* Texto sobre accent */
+  --destructive: #ef4444; /* Vermelho para erros */
+  --destructive-foreground: #ffffff;
+  --border: #333333; /* Bordas sutis */
+  --input: #262626; /* Inputs mesma cor dos cards */
+  --ring: #7c3aed; /* Focus ring roxo */
+  --hover: #7c3aed; /* Cor de hover roxo */
+  --hover-foreground: #ffffff; /* Texto sobre hover */
+  --icon: #ffffff; /* Ícones em branco por padrão */
+  --icon-hover: #7c3aed; /* Ícones em roxo no hover */
+  --chart-1: #7c3aed; /* Gráficos: roxo principal */
+  --chart-2: #9d5cf7; /* Roxo mais claro */
+  --chart-3: #be7bfa; /* Roxo ainda mais claro */
+  --chart-4: #dea5fd; /* Roxo bem claro */
+  --chart-5: #f0cfff; /* Roxo claríssimo */
+  --radius: 0.625rem;
+  --sidebar: #262626; /* Sidebar mesma cor dos cards */
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #7c3aed;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #333333;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #333333;
+  --sidebar-ring: #7c3aed;
+}
+
+/* Theme alias block removed: aliases are defined in :root above for compatibility.
+   The @theme at-rule is not valid in this environment and caused build errors. */
+
+/* Base styles: plain-CSS fallback (keeps behavior when Tailwind/PostCSS
+   isn't being processed by the linter/editor). If your build pipeline
+   supports Tailwind, you can keep the original @layer/@apply rules. */
+* {
+  box-sizing: border-box;
+  /* Fallback border color using theme variable */
+  border-color: var(--color-border, var(--border));
+}
+
+/* Subtle outline fallback: use CSS variable if provided; otherwise a
+   faint transparent ring so focus styles are not entirely missing. */
+*:focus {
+  outline: 2px solid var(--color-ring, rgba(255, 255, 255, 0.06));
+  outline-offset: 2px;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background, var(--background));
+  color: var(--color-foreground, var(--foreground));
+  font-family: var(--font-sans, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial);
+}
+
+/* Ajustes específicos para ícones e interações */
+
+/* Lucide icons: manter stroke branco por padrão */
+.lucide {
+  stroke: var(--foreground);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* Outros ícones SVG em branco por padrão */
+svg:not(.lucide) {
+  color: var(--foreground);
+  fill: currentColor;
+}
+
+/* Hover roxo em botões e elementos interativos */
+button:hover:not([disabled]),
+[role="button"]:hover:not([disabled]),
+a:hover:not([disabled]),
+.hover\:bg-accent:hover {
+  background-color: var(--primary) !important;
+  color: var(--primary-foreground) !important;
+}
+
+/* Botões outline com borda roxa no hover */
+button[class*="outline"]:hover:not([disabled]),
+[role="button"][class*="outline"]:hover:not([disabled]) {
+  border-color: var(--primary) !important;
+  background-color: var(--primary) !important;
+  color: var(--primary-foreground) !important;
+}
+
+/* Garantir que ícones dentro de botões mantenham a cor correta no hover */
+button:hover:not([disabled]) .lucide,
+[role="button"]:hover:not([disabled]) .lucide,
+a:hover:not([disabled]) .lucide {
+  stroke: var(--primary-foreground) !important;
+}

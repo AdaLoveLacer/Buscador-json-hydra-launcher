@@ -1,0 +1,143 @@
+{
+  "header": {
+    "title": "Hydra sources search engine",
+    "subtitle": "Pesquisa avançada em múltiplas fontes Hydra"
+  },
+  "buttons": {
+    "load_json": "Carregar JSON",
+    "copy_link": "Copiar Link",
+    "copied": "Copiado!"
+  },
+  "no_results": {
+    "title": "Nenhum resultado encontrado",
+    "body": "Tente ajustar sua busca ou filtros"
+  },
+  "filters": {
+    "title": "Filtros",
+    "clear": "Limpar",
+    "search_mode": {
+      "title": "Modo de Busca",
+      "all": "Todas as palavras",
+      "any": "Qualquer palavra"
+    },
+    "sort": {
+      "title": "Ordenar por",
+      "date": "Data de Upload (Recente)",
+      "size": "Tamanho (Maior)",
+      "name": "Nome (A-Z)"
+    },
+    "date_range": {
+      "title": "Período de Upload",
+      "from": "De",
+      "to": "Até"
+    },
+    "size_range": {
+      "title": "Tamanho do Arquivo (GB)",
+      "min": "Mínimo",
+      "max": "Máximo",
+      "placeholder": {
+        "min": "Ex: 1",
+        "max": "Ex: 50"
+      }
+    },
+    "results": {
+      "count_singular": "resultado",
+      "count_plural": "resultados",
+      "show": "Mostrando {count} {type}"
+    }
+  },
+  "upload": {
+    "dialog": {
+      "title": "Carregar arquivo JSON",
+      "description": "Selecione um arquivo JSON com links GOG para adicionar à pesquisa",
+      "tabs": {
+        "file": "Upload",
+        "url": "De URL"
+      }
+    },
+    "file": {
+      "drag_drop": "Clique ou arraste um arquivo JSON",
+      "max_size": "Máximo 200MB",
+      "loading": "Carregando...",
+      "error": {
+        "too_large": "Arquivo muito grande. Máximo permitido: 200MB. Tamanho do arquivo: {size}MB",
+        "invalid_format": "Formato JSON inválido. Verifique a estrutura do arquivo.",
+        "read_error": "Erro ao ler o arquivo JSON"
+      }
+    },
+    "url": {
+      "placeholder": "https://raw.githubusercontent.com/user/repo/main/file.json",
+      "button": "Carregar de URL",
+      "help": "Forneça a URL direta do arquivo JSON. Exemplo: GitHub raw content",
+      "error": {
+        "invalid_url": "Por favor, forneça uma URL válida",
+        "http_error": "Erro HTTP: {status}",
+        "invalid_format": "Formato JSON inválido. Verifique a URL e a estrutura do arquivo.",
+        "load_error": "Erro ao carregar JSON da URL: {message}"
+      }
+    },
+    "uploader": {
+      "title": "Carregue seu arquivo JSON",
+      "description": "Arraste e solte um arquivo JSON ou clique para selecionar",
+      "button": "Selecionar Arquivo"
+    }
+  },
+  "search": {
+    "stats": {
+      "filtered": "Mostrando {filtered} de {total} resultados",
+      "for_query": "para \"{query}\"",
+      "tab": "Pesquisa"
+    },
+    "bar": {
+      "placeholder": "Buscar por título, versão... Dica: separe palavras com espaço",
+      "help_button": "Dicas de busca",
+      "help": {
+        "multiple_words": {
+          "title": "Múltiplas palavras:",
+          "description": "\"Baldur's Gate 3\" encontra itens com todos os termos"
+        },
+        "any_word": {
+          "title": "Qualquer palavra:",
+          "description": "Use o filtro para mudar para modo \"qualquer um\""
+        }
+      }
+    }
+  },
+  "download_card": {
+    "unknown_source": "Desconhecido",
+    "url_suffix": "• URL",
+    "links": {
+      "count_singular": "link",
+      "count_plural": "links",
+      "copy": "Copiar Link",
+      "copied": "Copiado!",
+      "link_number": "Link {number}"
+    }
+  },
+  "sources_manager": {
+    "tab": "Fontes",
+    "empty": {
+      "title": "Nenhuma fonte carregada",
+      "body": "Carregue arquivos JSON ou URLs para começar a pesquisar"
+    },
+    "source_type": {
+      "url": "URL • Auto-atualiza",
+      "file": "Arquivo local"
+    },
+    "last_updated": "Atualizado: {date}",
+    "offline_copy": "Cópia offline"
+    ,
+    "retry_button": "Tentar novamente",
+    "retry": {
+      "success": "Carregado com sucesso",
+      "failed": "Falha ao carregar"
+    }
+  }
+
+  ,
+  "theme": {
+    "button": "Tema",
+    "default": "Padrão",
+    "dark": "Escuro"
+  }
+}

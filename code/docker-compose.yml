@@ -1,0 +1,132 @@
+version: "3.9"
+
+# BUG #5.1: Docker Configuration - Optimized for production and development
+
+services:
+  # Frontend - Next.js Application
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: buscador-json-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://backend:4000
+      - NEXT_PUBLIC_LOG_LEVEL=info
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - buscador-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    # BUG #5.1: Resource limits
+    mem_limit: 512m
+    memswap_limit: 512m
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+
+  # Backend - Flask API
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: buscador-json-backend
+    ports:
+      - "4000:4000"
+    environment:
+      # BUG #5.2: Environment Variables (integrated)
+      - FLASK_ENV=production
+      - FLASK_DEBUG=0
+      - NODE_ENV=production
+      - ALLOWED_ORIGINS=http://frontend:3000,http://localhost:3000
+      - MAX_UPLOAD_SIZE=104857600  # 100MB
+      - DATABASE_URL=sqlite:////app/data/db.sqlite
+      - UPLOAD_DIR=/app/uploads
+      # BUG #4.4: Rate Limiting configuration
+      - RATE_LIMIT_REQUESTS=100
+      - RATE_LIMIT_WINDOW=60
+      - RATE_LIMIT_UPLOAD_SIZE=524288000  # 500MB
+      # BUG #4.1: Database stats
+      - DATABASE_ENABLE_STATS=true
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - buscador-uploads:/app/uploads
+      - buscador-data:/app/data
+    networks:
+      - buscador-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    # BUG #5.1: Resource limits for backend
+    mem_limit: 1024m
+    memswap_limit: 1024m
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1024M
+        reservations:
+          cpus: '1'
+          memory: 512M
+
+  # Optional: SQLite Web UI for debugging
+  sqlite-web:
+    image: coleifer/sqlite-web:latest
+    container_name: buscador-json-sqlite-web
+    ports:
+      - "8080:8080"
+    volumes:
+      - buscador-data:/app/data
+    environment:
+      - SQLITE_DATABASE=/app/data/db.sqlite
+    networks:
+      - buscador-network
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    profiles:
+      - debug
+    # BUG #5.1: Resource limits for debug tool
+    mem_limit: 256m
+
+# Network configuration - BUG #5.1: Isolated network
+networks:
+  buscador-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+# Volume configuration - BUG #5.1: Persistent storage
+volumes:
+  buscador-uploads:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./uploads
+  buscador-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data
