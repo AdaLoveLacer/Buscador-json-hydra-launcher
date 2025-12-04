@@ -119,6 +119,17 @@ fi
 # 4. Criar pacotes
 echo -e "${YELLOW}[4/5] Criando pacotes...${NC}"
 
+# Verificar se zip está disponível
+if ! command -v zip &> /dev/null; then
+    echo -e "${RED}❌ ERRO: 'zip' não está instalado${NC}"
+    echo -e "${YELLOW}Instale com:${NC}"
+    echo -e "  Arch/Manjaro: sudo pacman -S zip"
+    echo -e "  Ubuntu/Debian: sudo apt install zip"
+    echo -e "  macOS: brew install zip"
+    echo -e "  Fedora: sudo dnf install zip"
+    exit 1
+fi
+
 # Nome base
 RELEASE_NAME="json-search-engine-v$VERSION"
 
