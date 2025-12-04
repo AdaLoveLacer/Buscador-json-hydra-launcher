@@ -1,4 +1,6 @@
 # 🔍 Buscador JSON Hydra Launcher
+<img width="3186" height="1538" alt="image" src="https://github.com/user-attachments/assets/a6a0c439-8490-4aed-95f3-913326ee6fb1" />
+<img width="3186" height="1538" alt="image" src="https://github.com/user-attachments/assets/b2c314f5-4c2d-4893-9310-d85fa7f4bd65" />
 
 Um poderoso motor de busca web para encontrar conteúdo em arquivos JSON do Hydra Launcher. Busque títulos, termos e acesse links magnéticos de torrent diretamente.
 
